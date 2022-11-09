@@ -1,0 +1,12 @@
+aws-serverless-nextjs:
+  component: "@sls-next/serverless-component@3.5.3"
+  inputs:
+    domain: []
+    bucketRegion: ap-northeast-2
+    bucketName: aws-serverless-nextjs-bucket2
+    name:
+      defaultLambda: DefaultLambda
+      imageLambda: ImageLambda
+    cloudfront:
+      distributionId: "EVDNY4LISWYI5"
+      comment: "nextjs deploy"
