@@ -15,6 +15,7 @@ export default function Home() {
           Welcome to <a href="#">AWS Serverless Next.js!</a>
           &nbsp;[{process.env.NEXT_PUBLIC_ENV}]
         </h1>
+        <h2>{new Date().toString()}</h2>
         <p className={styles.description}>
           BUCKET_REGION{" "}
           <code className={styles.code}>
