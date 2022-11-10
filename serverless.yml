@@ -2,11 +2,11 @@ aws-serverless-nextjs:
   component: "@sls-next/serverless-component@3.7.0"
   inputs:
     domain: []
-    bucketRegion: ap-northeast-2
-    bucketName: aws-serverless-nextjs-bucket2
+    bucketRegion: ${env.NEXT_PUBLIC_BUCKET_REGION}
+    bucketName: ${env.NEXT_PUBLIC_BUCKET_NAME}
     name:
-      defaultLambda: DefaultLambda
-      imageLambda: ImageLambda
+      defaultLambda: ${env.NEXT_PUBLIC_DEFAULT_LAMBDA}
+      imageLambda: ${env.NEXT_PUBLIC_IMAGE_LAMBDA}
     cloudfront:
-      distributionId: "EVDNY4LISWYI5"
-      comment: "nextjs deploy"
+      distributionId: ${env.NEXT_PUBLIC_ClOUDFRONT_ID}
+      comment: "nextjs ${env.NEXT_PUBLIC_ENV} deploy"

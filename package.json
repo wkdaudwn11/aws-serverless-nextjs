@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env-cmd -e dev next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "serverless deploy"
+    "deploy:dev": "env-cmd -e dev components-v1",
+    "deploy:prod": "env-cmd -e prod components-v1"
   },
   "dependencies": {
     "@plaiceholder/next": "^2.5.0",
+    "env-cmd": "^10.1.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
