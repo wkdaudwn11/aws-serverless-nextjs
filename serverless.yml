@@ -1,5 +1,5 @@
 aws-serverless-nextjs:
-  component: "@sls-next/serverless-component@3.5.3"
+  component: "@sls-next/serverless-component@3.7.0"
   inputs:
     domain: []
     bucketRegion: ap-northeast-2

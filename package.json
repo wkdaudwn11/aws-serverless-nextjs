@@ -6,15 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "serverless deploy"
   },
   "dependencies": {
-    "next": "13.0.2",
+    "@plaiceholder/next": "^2.5.0",
+    "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "eslint": "8.27.0",
-    "eslint-config-next": "13.0.2"
+    "eslint-config-next": "13.0.2",
+    "serverless": "^3.24.1",
+    "serverless-nextjs-plugin": "^2.5.2-alpha.0"
   }
 }
